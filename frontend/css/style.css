@@ -1,0 +1,106 @@
+body{
+    background:#f8f9fa;
+    font-family:"Segoe UI",Arial,sans-serif;
+}
+
+.auth-wrapper{
+    height:100vh;
+    overflow:hidden;
+}
+
+.auth-card{
+    max-height:92vh;
+    display:flex;
+    flex-direction:column;
+}
+
+.auth-card .card-body{
+    flex:1;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+}
+
+.auth-form{
+    flex:1;
+    overflow-y:auto;
+    padding-right:5px;
+}
+
+.auth-form::-webkit-scrollbar{
+    width:4px;
+}
+
+.auth-form::-webkit-scrollbar-thumb{
+    background:#cbd5e1;
+    border-radius:10px;
+}
+
+.login-bg{
+    background:linear-gradient(135deg,#0f172a,#2563eb,#60a5fa);
+}
+
+.auth-card .card{
+    border: none;
+    border-radius: 25px;
+    background: #ffffff;
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
+    overflow: hidden;
+    animation: fadeIn 0.7s ease;
+    transition: all 0.3s ease;
+}
+
+.auth-card .card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 35px 70px rgba(0, 0, 0, 0.22);
+}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.form-control{
+    height:50px;
+    border-radius:10px;
+}
+
+.form-control:focus{
+    box-shadow:0 0 12px rgba(13,110,253,.15);
+}
+
+.btn-primary{
+    height:50px;
+    font-size:16px;
+    font-weight:600;
+    border-radius:10px;
+    transition:.3s;
+    letter-spacing:.5px;
+}
+
+.btn-primary:hover{
+    transform:translateY(-2px);
+}
+
+.btn-success{
+    height:50px;
+    font-size:16px;
+    font-weight:600;
+    border-radius:10px;
+    transition:.3s;
+    letter-spacing:.5px;
+}
+
+.btn-success:hover{
+    transform:translateY(-2px);
+}
+
+a{
+    text-decoration:none;
+}
